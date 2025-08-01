@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>你喜歡哪一項？</p>
+<button onclick="vote('貓')">貓</button>
+<button onclick="vote('狗')">狗</button>
+<button onclick="vote('無尾熊')">無尾熊</button>
+<ul id="result"></ul>
+<script>
+function vote(choice) {
+document.getElementById("result").innerHTML +=`<li>${choice}</li>`;
+}
+</script>
+</body>
+</html>
