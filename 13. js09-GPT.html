@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>innerText vs innerHTML 範例</title>
+</head>
+<body>
+  <h2>範例：innerText vs innerHTML</h2>
+
+  <p id="demo"><b>粗體文字</b>，<i>斜體文字</i></p>
+
+  <button onclick="showDifference()">顯示差異</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    function showDifference() {
+      let para = document.getElementById("demo");
+      let result = 
+        "innerText: " + para.innerText + "\n" +
+        "innerHTML: " + para.innerHTML;
+
+      document.getElementById("output").innerText = result;
+    }
+  </script>
+</body>
+</html>
