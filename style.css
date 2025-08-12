@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+  background-color: #0a0000;
+  color: #ff2e2e;
+  font-family: 'Creepster', cursive, monospace;
+  text-align: center;
+  padding: 20px;
+  user-select: none;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-shadow: 0 0 25px #ff0000, 0 0 50px #ff0000cc;
+  margin-bottom: 0.2em;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 8px;
+  justify-content: center;
+  margin: 20px auto 15px;
+}
+
+.cell {
+  width: 110px;
+  height: 110px;
+  background-color: #1a0000;
+  color: #ff2222;
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 15px #ff0000aa;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+.cell:hover {
+  box-shadow: 0 0 30px #ff0000, inset 0 0 20px #ff5555;
+  background-color: #330000;
+}
+.cell.taken {
+  cursor: default;
+  opacity: 0.85;
+}
+
+#status {
+  font-size: 1.6em;
+  margin-top: 10px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff0000;
+  min-height: 48px;
+}
+
+.scoreboard {
+  font-size: 1.3em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#winnerList {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+  font-size: 1.2em;
+  list-style: none;
+  padding: 0;
+  border: 2px solid #ff2222;
+  border-radius: 10px;
+  background-color: #220000;
+  box-shadow: 0 0 15px #ff0000cc;
+}
+#winnerList li {
+  padding: 8px 15px;
+  border-bottom: 1px solid #ff4444;
+}
+#winnerList li:last-child {
+  border-bottom: none;
+}
+
+button#resetBtn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 1.3em;
+  background: #ff0000cc;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff0000cc;
+  transition: background 0.3s ease;
+}
+button#resetBtn:hover {
+  background: #ff5555;
+}
