@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>旅遊表單</title>
+<style>
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255,152,0,0.5);
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff9800, #f57c00);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #f57c00, #ef6c00);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+</style>
+</head>
+<body>
+
+<form
+action="https://docs.google.com/forms/d/e/1FAIpQLSfIqFl8eFBCoo0g5ossewN_19qVeheSR70abF4bOj3-3D7gvA/formResponse"
+method="POST" target=" blank">
+<label>姓名:</label>
+<input name="entry.241019645" type="text"><br>
+<label>年齡:</label>
+<input name="entry.713728723" type="text"><br>
+<label>電話:</label>
+<input name="entry.271292267" type="text"><br>
+<!--想要旅遊國家的選單-->
+<label>想要旅遊的國家</label>
+<select name="entry.1928865889" required>
+    <option value="">請選擇</option>
+    <option value="日本">日本</option>
+    <option value="韓國">韓國</option>
+    <option value="美國">美國</option>
+    <option value="英國">英國</option>
+    <option value="義大利">義大利</option>
+    <option value="冰島">冰島</option>
+    <option value="智利">智利</option>
+</select><br>
+<button type="submit">送出</button>
+</form>
+
+</body>
+</html>
